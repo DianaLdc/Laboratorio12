@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 
@@ -143,19 +142,268 @@
                 <button class="boton" onclick="mostrarDescuento()">Calcular</button>
                 <p id="resultadoDescuento"></p>
             </div>
-<!-- Ejercicio 10 -->
-<div class="tarjeta">
-    <h2>Función: saludo()</h2>
-    <p>Devuelve un mensaje de saludo personalizado según el nombre ingresado.</p>
+            <!-- Ejercicio 10 -->
+            <div class="tarjeta">
+                <h2>Función: saludo()</h2>
+                <p>Devuelve un mensaje de saludo personalizado según el nombre ingresado.</p>
 
-    <div class="fila">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" placeholder="Ingrese su nombre">
-    </div>
+                <div class="fila">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" placeholder="Ingrese su nombre">
+                </div>
 
-    <button class="boton" onclick="mostrarSaludo()">Saludar</button>
-    <p id="resultadoSaludo"></p>
-</div>
+                <button class="boton" onclick="mostrarSaludo()">Saludar</button>
+                <p id="resultadoSaludo"></p>
+            </div>
+            <!-- Ejercicio 11 -->
+            <div class="tarjeta">
+                <h2>Función: esPositivo()</h2>
+                <p>Indica si el número ingresado es mayor que cero.</p>
+
+                <div class="fila">
+                    <label for="numPositivo">Número:</label>
+                    <input type="number" id="numPositivo" placeholder="0">
+                </div>
+
+                <button class="boton" onclick="verificarPositivo()">Verificar</button>
+                <p id="resultadoPositivo"></p>
+            </div>
+
+            <!-- Ejercicio 12 -->
+            <div class="tarjeta">
+                <h2>Función: componerTransformaciones()</h2>
+                <p>Combina dos transformaciones de texto (mayúsculas y signo) en una sola función.</p>
+
+                <div class="fila">
+                    <label for="texto12">Texto:</label>
+                    <input type="text" id="texto12" placeholder="Ingrese una palabra o frase">
+                </div>
+
+                <button class="boton" onclick="mostrarTransformacion()">Transformar</button>
+                <p id="resultadoTransformacion"></p>
+            </div>
+            <!-- Ejercicio 13 -->
+            <div class="tarjeta">
+                <h2>Función: procesarTexto()</h2>
+                <p>Cuenta las palabras de un texto después de limpiar los espacios extra.</p>
+
+                <div class="fila">
+                    <label for="texto13">Texto:</label>
+                    <input type="text" id="texto13" placeholder="Escriba una frase">
+                </div>
+
+                <button class="boton" onclick="mostrarProcesarTexto()">Procesar</button>
+                <p id="resultadoTexto13"></p>
+            </div>
+
+            <!-- Ejercicio 14 -->
+            <div class="tarjeta">
+                <h2>Función: operacionesMatemáticas()</h2>
+                <p>Realiza las operaciones básicas (suma, resta, multiplicación y división) con dos números.</p>
+
+                <div class="fila">
+                    <label for="opA">Número A:</label>
+                    <input type="number" id="opA" placeholder="0">
+                </div>
+
+                <div class="fila">
+                    <label for="opB">Número B:</label>
+                    <input type="number" id="opB" placeholder="0">
+                </div>
+
+                <button class="boton" onclick="mostrarOperaciones()">Calcular</button>
+                <p id="resultadoOperaciones"></p>
+            </div>
+
+            <!-- Ejercicio 15 -->
+            <div class="tarjeta">
+                <h2>Función: crearContador()</h2>
+                <p>Crea un contador que puede incrementarse o reiniciarse usando closures y funciones flecha.</p>
+
+                <button class="boton" onclick="incrementarContador()">Incrementar</button>
+                <button class="boton" onclick="resetearContador()">Resetear</button>
+
+                <p id="resultadoContador2"></p>
+            </div>
+            <!-- Ejercicio 16 -->
+            <div class="tarjeta">
+                <h2>Función: acumulador()</h2>
+                <p>Crea un acumulador que inicia en un valor y va sumando nuevos valores cada vez que se invoca.</p>
+
+                <div class="fila">
+                    <label for="valorInicial">Valor inicial:</label>
+                    <input type="number" id="valorInicial" placeholder="0">
+                </div>
+
+                <div class="fila">
+                    <label for="valorNuevo">Valor a sumar:</label>
+                    <input type="number" id="valorNuevo" placeholder="0">
+                </div>
+
+                <button class="boton" onclick="crearNuevoAcumulador()">Crear acumulador</button>
+                <button class="boton" onclick="sumarAcumulador()">Sumar valor</button>
+
+                <p id="resultadoAcumulador"></p>
+            </div>
+
+            <!-- Ejercicio 17 -->
+            <div class="tarjeta">
+                <h2>Función: generarSaludoPersonalizado()</h2>
+                <p>Genera un saludo personalizado utilizando un closure que recuerda el nombre y la edad.</p>
+
+                <div class="fila">
+                    <label for="nombreSaludo">Nombre:</label>
+                    <input type="text" id="nombreSaludo" placeholder="Ingrese su nombre">
+                </div>
+
+                <div class="fila">
+                    <label for="edadSaludo">Edad:</label>
+                    <input type="number" id="edadSaludo" placeholder="Ejemplo: 20">
+                </div>
+
+                <button class="boton" onclick="crearSaludo()">Generar saludo</button>
+
+                <p id="resultadoSaludoPersonalizado"></p>
+            </div>
+
+            <!-- Ejercicio 18 -->
+            <div class="tarjeta">
+                <h2>Función: media(...numeros)</h2>
+                <p>Calcula el promedio de varios números utilizando el operador rest.</p>
+
+                <div class="fila">
+                    <label for="numerosMedia">Números (separados por coma):</label>
+                    <input type="text" id="numerosMedia" placeholder="Ejemplo: 10, 20, 30">
+                </div>
+
+                <button class="boton" onclick="calcularMedia()">Calcular promedio</button>
+                <p id="resultadoMedia"></p>
+            </div>
+
+            <!-- Ejercicio 19 -->
+            <div class="tarjeta">
+                <h2>Función: mostrarDatos(nombre, edad, ...hobbies)</h2>
+                <p>Muestra los datos personales y una lista de hobbies usando el operador rest.</p>
+
+                <div class="fila">
+                    <label for="nombreDatos">Nombre:</label>
+                    <input type="text" id="nombreDatos" placeholder="Ingrese su nombre">
+                </div>
+
+                <div class="fila">
+                    <label for="edadDatos">Edad:</label>
+                    <input type="number" id="edadDatos" placeholder="Ejemplo: 20">
+                </div>
+
+                <div class="fila">
+                    <label for="hobbiesDatos">Hobbies (separados por coma):</label>
+                    <input type="text" id="hobbiesDatos" placeholder="Ejemplo: leer, bailar, viajar">
+                </div>
+
+                <button class="boton" onclick="ejecutarMostrarDatos()">Mostrar datos</button>
+                <p id="resultadoDatos"></p>
+            </div>
+            <!-- Ejercicio 20 -->
+            <div class="tarjeta">
+                <h2>Función: ejecutarOperacion(fn, x, y)</h2>
+                <p>Ejecuta una operación aritmética pasada como función junto con dos valores numéricos.</p>
+
+                <div class="fila">
+                    <label for="valorX">Valor X:</label>
+                    <input type="number" id="valorX" placeholder="Ejemplo: 5">
+                </div>
+
+                <div class="fila">
+                    <label for="valorY">Valor Y:</label>
+                    <input type="number" id="valorY" placeholder="Ejemplo: 3">
+                </div>
+
+                <div class="fila">
+                    <label for="operacion">Operación:</label>
+                    <select id="operacion">
+                        <option value="sumar">Sumar</option>
+                        <option value="restar">Restar</option>
+                        <option value="multiplicar">Multiplicar</option>
+                        <option value="dividir">Dividir</option>
+                    </select>
+                </div>
+
+                <button class="boton" onclick="ejecutarOperacionHandler()">Ejecutar</button>
+                <p id="resultadoOperacion"></p>
+            </div>
+            <!-- Ejercicio 21 -->
+            <div class="tarjeta">
+                <h2>Función: filtrarArreglo(arr, callback)</h2>
+                <p>Filtra un arreglo de números según la condición elegida.</p>
+
+                <div class="fila">
+                    <label for="numerosFiltro">Números (separados por coma):</label>
+                    <input type="text" id="numerosFiltro" placeholder="Ejemplo: 1, 2, 3, 4, 5, 6">
+                </div>
+
+                <div class="fila">
+                    <label for="tipoFiltro">Condición:</label>
+                    <select id="tipoFiltro">
+                        <option value="pares">Pares</option>
+                        <option value="impares">Impares</option>
+                        <option value="mayores5">Mayores que 5</option>
+                    </select>
+                </div>
+
+                <button class="boton" onclick="aplicarFiltro()">Filtrar</button>
+                <p id="resultadoFiltro"></p>
+            </div>
+            <!-- Ejercicio 22 -->
+            <div class="tarjeta">
+                <h2>Función: descargarArchivo(url, callback)</h2>
+                <p>Simula la descarga de un archivo y muestra un mensaje cuando finaliza.</p>
+
+                <div class="fila">
+                    <label for="urlDescarga">URL del archivo:</label>
+                    <input type="text" id="urlDescarga" placeholder="Ejemplo: https://archivo.com/imagen.jpg">
+                </div>
+
+                <button class="boton" onclick="simularDescarga()">Descargar</button>
+                <p id="resultadoDescarga"></p>
+            </div>
+            <!-- Ejercicio 23 -->
+            <div class="tarjeta">
+                <h2>Función: potencia(base, exponente)</h2>
+                <p>Calcula la potencia de un número usando solo recursividad (sin Math.pow ni **).</p>
+
+                <div class="fila">
+                    <label for="basePot">Base:</label>
+                    <input type="number" id="basePot" placeholder="Ejemplo: 2">
+                </div>
+
+                <div class="fila">
+                    <label for="exponentePot">Exponente:</label>
+                    <input type="number" id="exponentePot" placeholder="Ejemplo: 5">
+                </div>
+
+                <button class="boton" onclick="calcularPotencia()">Calcular Potencia</button>
+                <p id="resultadoPotencia"></p>
+            </div>
+            <!-- Ejercicio 24 -->
+            <div class="tarjeta">
+                <h2>Función: crearSecuencia(inicio, paso)</h2>
+                <p>Genera una secuencia aritmética que incrementa en cada llamada sin usar arreglos ni objetos.</p>
+
+                <div class="fila">
+                    <label for="inicioSec">Inicio:</label>
+                    <input type="number" id="inicioSec" placeholder="Ejemplo: 2">
+                </div>
+
+                <div class="fila">
+                    <label for="pasoSec">Paso:</label>
+                    <input type="number" id="pasoSec" placeholder="Ejemplo: 3">
+                </div>
+
+                <button class="boton" onclick="crearNuevaSecuencia()">Crear secuencia</button>
+                <button class="boton" onclick="siguienteNumero()">Siguiente número</button>
+
+                <p id="resultadoSecuencia"></p>
+            </div>
 
         </div>
     </main>
